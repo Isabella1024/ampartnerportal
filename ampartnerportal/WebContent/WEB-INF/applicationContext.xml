@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+           
+	<bean id="messageSource" class="com.asiamiles.partnerportal.str.STRMessageSource">
+		<property name="strFacade" ref="STRFacade"/>
+	</bean>
+	
+	<bean id="messageCodesResolver" class="com.asiamiles.partnerportal.str.STRMessageCodesResolver"/>
+	
+	<bean id="URLHelper" class="com.asiamiles.partnerportal.util.URLHelper">
+		<property name="siteProperties" ref="SiteProperties"/>
+	</bean>
+	
+	<bean id="CryptoHelper" class="com.asiamiles.partnerportal.util.CryptoHelper">
+		<property name="cryptoKeyPath" value="file:/repos/prop/ampartnerportal/webclsWAS6.ser"/>
+	</bean>
+	
+	<!-- Property Configurer for injecting System property values to beans -->
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>file:/repos/prop/ampartnerportal/ampartnerportal.properties</value>
+		</property>
+	</bean>
+	
+	<!-- Site Properties -->
+	<bean name="SiteProperties" class="com.asiamiles.partnerportal.SiteProperties" scope="singleton">
+<!--		<property name="propertiesPath" value="classpath:/ampartnerportal.properties"/>-->
+		<property name="propertiesPath" value="file:/repos/prop/ampartnerportal/ampartnerportal.properties"/>
+		<property name="platform" value="${_WASPlatform}"/> 
+	</bean>
+	
+	<!-- CLS Interface Properties -->
+	<bean name="CLSInterfaceProperties" class="com.asiamiles.partnerportal.SiteProperties" scope="singleton">
+<!--		<property name="propertiesPath" value="classpath:/clsInterface.properties"/>-->
+		<property name="propertiesPath" value="file:/repos/prop/ampartnerportal/clsInterface.properties"/>
+		<property name="platform" value="${_WASPlatform}"/> 
+
+	</bean>
+	
+	<!-- Permitted IP Addresses for Partners that requested it -->
+	<bean name="PermittedIPAddresses" class="com.asiamiles.partnerportal.SiteProperties" scope="singleton">
+		<property name="propertiesPath" value="file:/repos/prop/ampartnerportal/permittedIPAddresses.properties"/>
+		<property name="platform" value="${_WASPlatform}"/> 
+	</bean>
+	
+	<!-- Facades to External Systems -->
+	<bean name="CLSFacade" class="com.asiamiles.partnerportal.cls.CLSFacade" scope="singleton">
+		<property name="httpConnectionHelper" ref="HTTPConnectionHelper"/>
+		<property name="clsProperties" ref="CLSInterfaceProperties"/>
+	</bean>
+	
+	<bean name="HTTPConnectionHelper" class="com.asiamiles.partnerportal.util.HTTPConnectionHelper" scope="singleton"/>
+	
+	<bean name="STRFacade" class="com.asiamiles.partnerportal.str.STRFacade" scope="singleton">
+		<property name="siteProperties" ref="SiteProperties"/>
+		<property name="messageMapHandler" ref="STRMessageMapHandler"/>
+	</bean>
+	
+	<bean id="STRMessageMapHandler " class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+   		<property name="staticMethod"><value>com.cathaypacific.str.MessageMapHandler.getInstance</value></property>
+	</bean>
+
+	<!-- Domain Model Validators -->
+	<bean name="paperlessRedemptionFormValidator" class="com.asiamiles.partnerportal.domain.logic.PaperlessRedemptionFormValidator">
+		<property name="strFacade" ref="STRFacade"/>
+	</bean>	
+	
+	<bean name="pendingClaimsFormValidator" class="com.asiamiles.partnerportal.domain.logic.PendingClaimsFormValidator">
+		<property name="strFacade" ref="STRFacade"/>
+	</bean>
+
+	<bean name="billingFormValidator" class="com.asiamiles.partnerportal.domain.logic.BillingFormValidator" />
+	
+	<bean name="reportFormValidator" class="com.asiamiles.partnerportal.domain.logic.ReportFormValidator"/>
+
+	<bean name="changePasswordRequestValidator" class="com.asiamiles.partnerportal.domain.logic.ChangePasswordRequestValidator"/>	
+	
+	<bean name="forgotPasswordRequestValidator" class="com.asiamiles.partnerportal.domain.logic.ForgotPasswordRequestValidator"/>
+	
+	<bean name="agentValidator" class="com.asiamiles.partnerportal.domain.logic.AgentValidator"/>
+	
+	<bean name="voidClaimValidator" class="com.asiamiles.partnerportal.domain.logic.VoidClaimValidator"/>
+	<!-- aml.38938  start -->
+	<bean name="membershipValidator" class="com.asiamiles.partnerportal.domain.logic.MembershipValidator"/>
+	<!-- aml.38938  end -->
+	<!-- AML.34743 start -->
+	  <bean name="clsutlDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="${clsutl.db.driver}"/>
+		<property name="url" value="${clsutl.db.url}"/>
+		<property name="username" value="${clsutl.db.username}"/>
+		<property name="password" value="${clsutl.db.password}"/>
+	</bean>
+	<bean name="instantRedeemDao" class="com.asiamiles.partnerportal.dao.impl.InstantRedeemGroupDaoImpl">
+		<property name="dataSource" ref="clsutlDataSource"/>
+		<!-- <property name="dataSource" ref="clsutlJndiDataSource"/>   -->
+	</bean>
+	<bean name="instantRedeemGroup" class="com.asiamiles.partnerportal.util.InstantRedeemGroup">
+        <property name="instantRedeemGroupDao" ref="instantRedeemDao"/>
+    </bean>
+    <bean name="personalofferProxy" class="com.cathaypacific.iRedeem.client.proxy.PersonlOfferProxyBean"/>
+    <bean name="personalofferRequest" class="com.cathaypacific.iRedeem.client.request.PersonalOfferRequestBean">
+    	<property name="login" value="${ws.login.name}"/>
+    	<property name="password" value="${ws.login.pass}"/>
+    	<property name="providerCode" value="${ws.provider.code}"/>
+    	<property name="methodName" value="${ws.method.name}"/>
+    	<property name="type" value="${ws.personalized.type}"/>
+    </bean>	
+    
+    <!-- 
+    <bean name="clsutlJndiDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+    	<property name="jndiName" value="clsutlDatasource"/>
+    	<property name="lookupOnStartup" value="false"/>
+    	<property name="cache" value="true"/>
+    	<property name="resourceRef" value="true"/>
+	    <property name="jndiTemplate" ref="jndiTemplate"/>
+    	
+    	<property name="jndiEnvironment">
+    		<props>
+    			<prop key="Context.INITIAL_CONTEXT_FACTORY">com.ibm.websphere.naming.WsnInitialContextFactory</prop>
+    			<prop key="java.naming.authoritative">true</prop>
+    		</props>
+    	</property>
+    	 
+    	 <property name="proxyInterface" value="javax.sql.DataSource"/>
+    	<property name="exposeAccessContext" value="true"/>
+    	
+    </bean>
+     
+    <bean name="jndiTemplate" class="org.springframework.jndi.JndiTemplate">
+    	<property name="environment">
+    		<props>
+    			<prop key="Context.INITIAL_CONTEXT_FACTORY">com.ibm.websphere.naming.WsnInitialContextFactory</prop>
+    		</props>
+    	</property>
+    </bean>
+    -->
+	<!-- AML.34743 end -->
+</beans>

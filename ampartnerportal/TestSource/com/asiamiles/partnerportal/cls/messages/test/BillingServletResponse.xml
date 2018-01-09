@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- DOCTYPE redemption clas package retrieval SYSTEM "" -->
+<PaperlessPartnerInvoiceServlet>
+<statusCode><![CDATA[0000]]></statusCode>
+	<errorMessage/>
+	<actionCode><![CDATA[B]]></actionCode>
+	<partnerCode><![CDATA[]]></partnerCode>
+	<partnerName><![CDATA[]]></partnerName>
+</PaperlessPartnerInvoiceServlet>

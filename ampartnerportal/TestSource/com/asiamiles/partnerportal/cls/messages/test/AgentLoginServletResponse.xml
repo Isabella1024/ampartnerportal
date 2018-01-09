@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- DOCTYPE redemption clas package retrieval SYSTEM "" -->
+<AgentLoginServlet>
+<statusCode><![CDATA[0000]]></statusCode>
+	<errorMessage/>
+	<partnerName><![CDATA[THE LANDIS TAIPEI - REGULAR]]></partnerName>
+	<timeZone><![CDATA[800]]></timeZone>	
+	<agentID><![CDATA[TEST11]]></agentID>
+	<EmailAddress><![CDATA[CPPBIL@CATHAYPACIFIC.COM]]></EmailAddress>
+	<FamilyName><![CDATA[TEST]]></FamilyName>
+	<FirstName><![CDATA[TEST]]></FirstName>
+
+	<AdministratorIndicator><![CDATA[A]]></AdministratorIndicator>
+
+</AgentLoginServlet>

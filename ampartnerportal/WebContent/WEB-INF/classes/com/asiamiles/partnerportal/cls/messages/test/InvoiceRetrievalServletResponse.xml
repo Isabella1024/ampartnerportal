@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- DOCTYPE redemption clas package retrieval SYSTEM "" -->
+<PaperlessInvoiceRetrievalServlet>
+<statusCode><![CDATA[0000]]></statusCode>
+	<errorMessage/>
+<partnerCode><![CDATA[196]]></partnerCode>
+<partnerName><![CDATA[LANGHAM PLACE HOTEL MONGKOK HK - REGULAR]]></partnerName>
+<monthlyCutoffDay><![CDATA[15]]></monthlyCutoffDay>
+<timeZone><![CDATA[800]]></timeZone>
+
+<entry>
+<establishmentCode><![CDATA[196]]></establishmentCode>
+<establishmentName><![CDATA[LANGHAM PLACE HOTEL, MONGKOK, HONG KONG]]></establishmentName>
+	
+<oldestCollectionTimestamp><![CDATA[20090720 09:48:33]]></oldestCollectionTimestamp>
+	
+
+<latestCollectionTimestamp><![CDATA[20090720 09:48:33]]></latestCollectionTimestamp>
+</entry>
+
+<entry>
+<establishmentCode><![CDATA[BACKYARD]]></establishmentCode>
+<establishmentName><![CDATA[THE BACKYARD]]></establishmentName>
+	
+<oldestCollectionTimestamp><![CDATA[]]></oldestCollectionTimestamp>
+	
+<latestCollectionTimestamp><![CDATA[]]></latestCollectionTimestamp>
+</entry>
+
+<entry>
+<establishmentCode><![CDATA[MINGCOURT]]></establishmentCode>
+<establishmentName><![CDATA[MING COURT]]></establishmentName>
+	
+<oldestCollectionTimestamp><![CDATA[]]></oldestCollectionTimestamp>
+
+	
+<latestCollectionTimestamp><![CDATA[]]></latestCollectionTimestamp>
+</entry>
+
+<entry>
+<establishmentCode><![CDATA[PORTAL-WP]]></establishmentCode>
+<establishmentName><![CDATA[PORTAL - WORK & PLAY]]></establishmentName>
+	
+<oldestCollectionTimestamp><![CDATA[]]></oldestCollectionTimestamp>
+	
+<latestCollectionTimestamp><![CDATA[]]></latestCollectionTimestamp>
+</entry>
+
+<entry>
+<establishmentCode><![CDATA[THEPLACE]]></establishmentCode>
+<establishmentName><![CDATA[THE PLACE]]></establishmentName>
+	
+
+<oldestCollectionTimestamp><![CDATA[]]></oldestCollectionTimestamp>
+	
+<latestCollectionTimestamp><![CDATA[]]></latestCollectionTimestamp>
+</entry>
+
+<entry>
+<establishmentCode><![CDATA[TOKORO]]></establishmentCode>
+<establishmentName><![CDATA[TOKORO - ROBATAYAKI & BAR]]></establishmentName>
+	
+<oldestCollectionTimestamp><![CDATA[]]></oldestCollectionTimestamp>
+	
+<latestCollectionTimestamp><![CDATA[]]></latestCollectionTimestamp>
+</entry>
+
+</PaperlessInvoiceRetrievalServlet>

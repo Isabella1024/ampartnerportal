@@ -1,0 +1,8 @@
+<logger reset="true">
+    <dest name="DES1" type="FILE" rolling="DAILY">
+        <parm name="File" value="/repos/log/ampartnerportal/ampartnerportal.log"/>
+        <layout pattern="[%t] %d %-5p [%C{1}.%M] [%X{SessionID}] [%X{AgentID}] %m%n"/>
+    </dest>
+    <dest name="DES2" type="SYSTEM_OUT"/>
+    <level value="DEBUG"/>
+</logger>

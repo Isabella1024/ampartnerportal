@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- DOCTYPE redemption clas package retrieval SYSTEM "" -->
+<PaperlessCollectionRetrievalServlet>
+<statusCode><![CDATA[0000]]></statusCode>
+	<errorMessage/>
+	<actionCode><![CDATA[A]]></actionCode>
+	<partnerCode><![CDATA[]]></partnerCode>
+	<partnerName><![CDATA[]]></partnerName>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432274]]></claimNo>
+
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090629 12:18:27]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090629 12:18:36]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1535104469]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432308]]></claimNo>
+	<holderName><![CDATA[MACGHILLESEATHEANAICHBAILAIICHSTALIBACHI]]></holderName>
+	<holderFirstName><![CDATA[HATMAGUPTAFRATARINAGAROST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 09:58:58]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:25:03]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432353]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[YU TUNG]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 09:57:02]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:23:40]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432354]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[YU TUNG]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 09:57:21]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:23:52]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432355]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 09:57:43]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:24:02]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432356]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:10:06]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:28:07]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432357]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[JOHN]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 09:57:56]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:24:12]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432361]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[YU TUNG]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 09:58:19]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:24:32]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432363]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[YU TUNG]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 09:58:30]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:24:45]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432365]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[YU TUNG]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 09:59:27]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:25:51]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432366]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[YU TUNG]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 09:59:40]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:26:01]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432367]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:12:30]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:31:42]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432372]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:12:44]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:31:56]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432373]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:12:59]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:32:10]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432374]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:13:10]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:32:25]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576611]]></memberID>
+	<claimNo><![CDATA[3432375]]></claimNo>
+	<holderName><![CDATA[INSUFFICIENT]]></holderName>
+	<holderFirstName><![CDATA[MILES]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:14:38]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:33:46]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432377]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:14:51]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:33:58]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432381]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:11:57]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:31:27]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432382]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090703 11:04:57]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090703 11:05:04]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1535104469]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432384]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090703 11:20:05]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090708 10:19:40]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[ABCD123]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432385]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:10:23]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:29:11]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST14]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432386]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:10:53]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:30:24]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432387]]></claimNo>
+	<holderName><![CDATA[-]]></holderName>
+	<holderFirstName><![CDATA[-]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:13:57]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:33:10]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432389]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:11:08]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:30:42]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432390]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:14:12]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:33:23]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432391]]></claimNo>
+	<holderName><![CDATA[REDEMPTIONWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW]]></holderName>
+	<holderFirstName><![CDATA[GROUPWWWWWWWWWWWWWWWWWWWW]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:11:26]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:30:58]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432392]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:11:42]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:31:13]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432405]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[YU TUNG]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:00:09]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:27:21]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432410]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[YU TUNG]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:00:31]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:27:37]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576522]]></memberID>
+	<claimNo><![CDATA[3432416]]></claimNo>
+	<holderName><![CDATA[KEUNG]]></holderName>
+	<holderFirstName><![CDATA[LOUIE SHU]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:02:07]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:27:51]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432453]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:10:38]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:29:50]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432457]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090706 10:14:26]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 09:33:35]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003004314]]></memberID>
+	<claimNo><![CDATA[3432468]]></claimNo>
+	<holderName><![CDATA[CHIN]]></holderName>
+	<holderFirstName><![CDATA[YU TUNG]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090707 09:21:57]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 18:02:06]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1003004314]]></receiptNo>		
+	<remarks><![CDATA[MONG KOK BRANCH]]></remarks>		
+	<remarks2><![CDATA[TEL 1234567]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432486]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090707 09:22:19]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 18:03:06]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[MONG KOK BRANCH]]></remarks>		
+	<remarks2><![CDATA[TEL 1234567]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432487]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090707 09:22:32]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090707 18:03:17]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1001576951]]></receiptNo>		
+	<remarks><![CDATA[MONG KOK BRANCH]]></remarks>		
+	<remarks2><![CDATA[TEL 1234567]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1003001000]]></memberID>
+	<claimNo><![CDATA[3432530]]></claimNo>
+	<holderName><![CDATA[MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM]]></holderName>
+	<holderFirstName><![CDATA[MMMMMMMMMMMMMMMMMMMMMMMM]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090707 18:00:53]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TESTAGENT12345]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090709 10:43:15]]></completionTime>		
+	<completionHandledBy><![CDATA[TESTAGENT54321]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090714]]></billedDate>			
+		
+	<receiptNo><![CDATA[ABCD12345678901234567890]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001577396]]></memberID>
+	<claimNo><![CDATA[3432557]]></claimNo>
+	<holderName><![CDATA[HANYANG]]></holderName>
+	<holderFirstName><![CDATA[YU WEN]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090720 15:57:36]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[]]></completionTime>		
+	<completionHandledBy><![CDATA[]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[]]></billedDate>			
+		
+	<receiptNo><![CDATA[]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432560]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090708 10:44:22]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090708 10:44:30]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[12345]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432561]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090708 10:23:55]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090708 10:24:06]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[12345]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1001576951]]></memberID>
+	<claimNo><![CDATA[3432582]]></claimNo>
+	<holderName><![CDATA[TEST]]></holderName>
+	<holderFirstName><![CDATA[MEMBER]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090709 10:46:03]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090709 10:46:09]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090714]]></billedDate>			
+		
+	<receiptNo><![CDATA[TSTLATESTXSACTION]]></receiptNo>		
+	<remarks><![CDATA[TST REMARK 123,ABC.]]></remarks>		
+	<remarks2><![CDATA[TST REMARK 2 ABC-DEF]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432584]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090708 15:26:30]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090708 15:26:38]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1535104469]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432585]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090708 15:35:26]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090708 15:35:58]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1535104469]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432586]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090708 15:38:16]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090708 16:27:37]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[999]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432591]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090708 17:32:50]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090708 17:33:13]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090709]]></billedDate>			
+		
+	<receiptNo><![CDATA[1535104469]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432592]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090709 10:44:05]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TESTAGENT54321]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090709 10:44:27]]></completionTime>		
+	<completionHandledBy><![CDATA[TESTAGENT54321]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090714]]></billedDate>			
+		
+	<receiptNo><![CDATA[ABCD12345678901234567890]]></receiptNo>		
+	<remarks><![CDATA[AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD1234567890123456789012345678901234567890123456789]]></remarks>		
+	<remarks2><![CDATA[1234567890123456789012345678901234567890123456789AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1064448210]]></memberID>
+	<claimNo><![CDATA[3432593]]></claimNo>
+	<holderName><![CDATA[UNPRADOEM DA COSTA OLIVEIRA]]></holderName>
+	<holderFirstName><![CDATA[MANUELA KANWARANAT]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090709 10:46:55]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090709 10:47:05]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[20090714]]></billedDate>			
+		
+	<receiptNo><![CDATA[TSTTEST]]></receiptNo>		
+	<remarks><![CDATA[TST REMARK 123~!@#$%^&*()_+-\][/.><?";'`]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1064448210]]></memberID>
+	<claimNo><![CDATA[3432594]]></claimNo>
+	<holderName><![CDATA[UNPRADOEM DA COSTA OLIVEIRA]]></holderName>
+	<holderFirstName><![CDATA[MANUELA KANWARANAT]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090709 10:47:47]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[]]></completionTime>		
+	<completionHandledBy><![CDATA[]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[]]></billedDate>			
+		
+	<receiptNo><![CDATA[]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432603]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090720 09:48:10]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[20090720 09:48:33]]></completionTime>		
+	<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[]]></billedDate>			
+		
+	<receiptNo><![CDATA[999]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432604]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090720 10:27:59]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[]]></completionTime>		
+	<completionHandledBy><![CDATA[]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[]]></billedDate>			
+		
+	<receiptNo><![CDATA[]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+	<claim>	
+	<memberID><![CDATA[1535104469]]></memberID>
+	<claimNo><![CDATA[3432605]]></claimNo>
+	<holderName><![CDATA[TESTER]]></holderName>
+	<holderFirstName><![CDATA[TEST]]></holderFirstName>	
+		
+	<collectionTime><![CDATA[20090720 11:56:43]]></collectionTime>		
+	<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>		
+	
+	<completionTime><![CDATA[]]></completionTime>		
+	<completionHandledBy><![CDATA[]]></completionHandledBy>			
+	
+	<billedDate><![CDATA[]]></billedDate>			
+		
+	<receiptNo><![CDATA[]]></receiptNo>		
+	<remarks><![CDATA[]]></remarks>		
+	<remarks2><![CDATA[]]></remarks2>		
+	<packageCode><![CDATA[JK0001]]></packageCode>					
+	<establishmentCode><![CDATA[196]]></establishmentCode>					
+	<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>							
+	</claim>
+
+</PaperlessCollectionRetrievalServlet>

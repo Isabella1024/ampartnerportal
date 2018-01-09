@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- DOCTYPE redemption clas package retrieval SYSTEM "" -->
+<PaperlessRetrievalServlet>
+<statusCode><![CDATA[0000]]></statusCode>
+	<errorMessage/>
+<memberID><![CDATA[1535104469]]></memberID>
+
+<Entry>
+<claimStatusCode><![CDATA[00]]></claimStatusCode>
+<claimNo><![CDATA[3432603]]></claimNo>
+<securityCode><![CDATA[ARRKELR0050]]></securityCode>
+<holderName><![CDATA[TESTER]]></holderName>
+<holderFirstName><![CDATA[TEST]]></holderFirstName>
+<consumptionStartDate><![CDATA[19991231]]></consumptionStartDate>
+<consumptionEndDate><![CDATA[39991231]]></consumptionEndDate>
+	
+
+<collectionTime><![CDATA[20090720 09:48:10]]></collectionTime>
+<collectionHandledBy><![CDATA[TEST12]]></collectionHandledBy>
+	
+<completionTime><![CDATA[20090720 09:48:33]]></completionTime>
+<completionHandledBy><![CDATA[TEST12]]></completionHandledBy>
+<packageCode><![CDATA[JK0001]]></packageCode>
+<packageDescription><![CDATA[JK0001 Unlimited paperless package]]></packageDescription>
+</Entry>
+
+</PaperlessRetrievalServlet>

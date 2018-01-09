@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>STR Tag Library</short-name>
+	<uri>str</uri>
+	<display-name>STR Tag Library</display-name>
+	<description>STR Tag Library</description>
+	<tag>
+		<name>map</name>
+		<tag-class>com.cathaypacific.str.taglibs.STRTag</tag-class>
+		<body-content>JSP</body-content>
+		<display-name>STR Tag</display-name>
+		<description>Tag to initialize a map of labels in the same appcode and langcode.</description>
+		<attribute>
+			<name>appCode</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>lang</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>cache</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>strId</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>label</name>
+		<tag-class>com.cathaypacific.str.taglibs.STRContentTag</tag-class>
+		<body-content>JSP</body-content>
+		<display-name>STRContent Tag</display-name>
+		<description>Tag to display label by specifying message key.</description>
+		<attribute>
+			<name>strId</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
+	

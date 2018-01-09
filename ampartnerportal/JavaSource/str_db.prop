@@ -1,0 +1,8 @@
+str_driver=oracle.jdbc.driver.OracleDriver
+str_url=jdbc:oracle:thin:@webdbdev:1521:ebst
+str_username=eutility
+str_password=teutility
+str_datasource=jdbc/EBSAppDataSource
+#str_datasource=jdbc/Cathay
+#str_username=cxsitedev
+#str_password=cxd2gbnv4q

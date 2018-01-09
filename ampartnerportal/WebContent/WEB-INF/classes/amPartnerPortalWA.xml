@@ -1,0 +1,8 @@
+<logger reset="true">
+    <dest name="DES1" type="FILE" rolling="DAILY">
+        <parm name="File" value="/repos/log/ampartnerportal/ampartnerportalwa.log"/>
+        <layout pattern="%X{remoteIP}|%d|%X{SessionID}|%X{PartnerCode}|%X{AgentID}|%m%n"/>
+    </dest>
+    <dest name="DES2" type="SYSTEM_OUT"/>
+    <level value="INFO"/>
+</logger>

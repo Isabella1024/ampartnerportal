@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- DOCTYPE redemption clas package retrieval SYSTEM "" -->
+<AgentRetrievalServlet>
+<statusCode><![CDATA[0000]]></statusCode>
+	<errorMessage/>
+<AdministratorAgentID><![CDATA[TEST11]]></AdministratorAgentID>
+<PartnerCode><![CDATA[310]]></PartnerCode>
+<ExportCount><![CDATA[1]]></ExportCount>
+
+<agent>
+<agentID><![CDATA[TEST11]]></agentID>
+<email><![CDATA[CPPBIL@CATHAYPACIFIC.COM]]></email>
+<familyName><![CDATA[TEST]]></familyName>
+<firstName><![CDATA[TEST]]></firstName>
+<agentType><![CDATA[A]]></agentType>
+<remarks><![CDATA[]]></remarks>
+
+<updatedBy><![CDATA[CPPBIL]]></updatedBy>
+</agent>
+
+</AgentRetrievalServlet>

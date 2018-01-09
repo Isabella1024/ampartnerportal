@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!-- View Resolver -->
+    <bean id="viewResolver"
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass"
+            value="org.springframework.web.servlet.view.JstlView" />
+        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+    <!-- Exception Handlers -->
+    <bean id="systemExceptionHandler" class="com.asiamiles.partnerportal.web.SystemExceptionHandler" >
+        <property name="order" value="1"/>
+    </bean>
+    
+    <!-- Locale Resolver and Interceptors -->
+    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+        <property name="cookieName" value="clientlanguage"/>
+        <!-- in seconds. If set to -1, the cookie is not persisted (deleted when browser shuts down) -->
+        <property name="cookieMaxAge" value="-1"/>
+        <property name="cookiePath" value="/amPartner"/>
+    </bean>
+    
+    <bean id="localeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+        <property name="paramName" value="lang"/>
+    </bean>
+    
+    <!-- Login-Related Controller Mappings -->
+
+    <bean name="loginController" class="com.asiamiles.partnerportal.web.controller.LoginController" scope="singleton">
+        <property name="clsFacade" ref="CLSFacade" />
+        <property name="siteProperties" ref="SiteProperties" />
+        <property name="urlHelper" ref="URLHelper"/>
+        <property name="methodNameResolver" ref="loginMethodResolver"/>
+    </bean>
+    
+    <bean name="groupDomain" class="com.asiamiles.partnerportal.domain.InstantRedeemPartnerGroup">
+    </bean>
+
+    <bean name="forgotPasswordController" class="com.asiamiles.partnerportal.web.controller.ForgotPasswordController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade"/>
+        <property name="formView" value="ForgotPasswordForm"/>
+        <property name="validator" ref="forgotPasswordRequestValidator"/>
+    </bean>
+
+    <bean id="loginMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+        <property name="mappings">
+            <value>
+                /loginForm.do=loginForm
+                /login.do=login
+                /logout.do=logout
+                /instantRedeem/logout.do=logout
+                /instantRedeem/loginForm.do=instantRedeemLoginForm
+                /instantRedeem/login.do=login
+            </value>
+        </property>
+    </bean>
+
+    <bean name="footerController" class="com.asiamiles.partnerportal.web.controller.FooterController" scope="singleton">
+        <property name="methodNameResolver" ref="footerMethodResolver"/>
+    </bean>
+
+    <bean id="footerMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+        <property name="mappings">
+            <value>
+                /copyright.do=copyright
+                /privacy.do=privacy
+                /terms.do=terms
+            </value>
+        </property>
+    </bean>
+    
+    <bean id="footerHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="interceptors">
+            <list>
+                <ref bean="localeInterceptor"/>
+                <ref bean="sslInterceptor"/>
+                <ref bean="log4jMDCInterceptor" />
+            </list>
+        </property>
+        <property name="mappings">
+            <value>
+                /copyright.do=footerController
+                /privacy.do=footerController
+                /terms.do=footerController
+            </value>
+        </property>
+    </bean>
+	    
+    <!-- URL Handler Mapping for URLs that does not require authentication -->
+    <bean id="loginHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="interceptors">
+            <list>
+                <ref bean="localeInterceptor"/>
+                <ref bean="sslInterceptor"/>
+                <ref bean="log4jMDCInterceptor" />
+                <ref bean="waInterceptor" />
+            </list>
+        </property>
+        <property name="mappings">
+            <value>
+                /loginForm.do=loginController
+                /login.do=loginController
+                /logout.do=loginController
+                /instantRedeem/logout.do=loginController
+                /forgotPassword.do=forgotPasswordController
+                /instantRedeem/loginForm.do=loginController
+                /instantRedeem/login.do=loginController
+            </value>
+        </property>
+    </bean>
+
+    <!-- URL Handler Mapping for WebCLS Admin URLs -->
+    <bean id="clsAdminHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="interceptors">
+            <list>
+                <ref bean="localeInterceptor"/>
+                <ref bean="sslInterceptor"/>
+                <ref bean="log4jMDCInterceptor" />
+                <ref bean="clsAdminInterceptor"/>
+                <ref bean="waInterceptor" />
+            </list>
+        </property>
+        <property name="urlMap">
+            <map>
+                <entry key="/clsAgentAdmin.do" value-ref="secure_clsAgentAdmin"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- URL Handler mappings for authenticated URLs -->
+    <bean id="secureHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="interceptors">
+            <list>
+                <ref bean="localeInterceptor"/>
+                <ref bean="sslInterceptor"/>
+                <ref bean="log4jMDCInterceptor" />
+                <ref bean="ipAddressFilterInterceptor"/>
+                <ref bean="loginInterceptor" />
+                <ref bean="waInterceptor" />
+            </list>
+        </property>
+        <property name="urlMap">
+            <map>
+                <entry key="/homepage.do" value-ref="secure_homepage"/>
+                <entry key="/redemption.do" value-ref="secure_redemption" />
+                <entry key="/pendingClaims.do" value-ref="secure_pendingClaims" />
+                <entry key="/billing.do" value-ref="secure_billing" />
+                <entry key="/report.do" value-ref="secure_report"/>
+                <entry key="/agentAdmin.do" value-ref="secure_agentAdmin"/>
+                <entry key="/agentResetPassword.do" value-ref="secure_agentAdmin"/>
+                <entry key="/changePassword.do" value-ref="secure_changePassword"/>
+                <entry key="/newAgent.do" value-ref="secure_newAgent"/>
+                <entry key="/updateAgent.do" value-ref="secure_updateAgent"/>
+                <entry key="/voidClaim.do" value-ref="secure_voidClaim"/>
+                <entry key="/instantRedeem/homepage.do" value-ref="secure_homepage"/>
+                <entry key="/instantRedeem/qrCodeReader.do" value-ref="secure_qrCodeReader"/>
+                <entry key="/instantRedeem/redemption.do" value-ref="secure_instantRedeem"/>
+                <entry key="/instantRedeem/invalidOffer.do" value-ref="secure_invalidOffer"/>
+                <entry key="/instantRedeem/expiredOffer.do" value-ref="secure_invalidOffer"/>
+                <entry key="/instantRedeem/redeemedOffer.do" value-ref="secure_invalidOffer"/>
+                <entry key="/instantRedeem/notAllowOffer.do" value-ref="secure_invalidOffer"/>
+                <entry key="/instantRedeem/groupAdd.do" value-ref="secure_GroupAdmin"/>
+                <entry key="/instantRedeem/listGroup.do" value-ref="secure_GroupAdmin"/>
+                <entry key="/instantRedeem/groupAssign.do" value-ref="secure_GroupAdmin"/>
+                <entry key="/instantRedeem/loadGroupAdd.do" value-ref="secure_GroupAdmin"/>
+                <entry key="/instantRedeem/listPackageGroup.do" value-ref="secure_GroupAdmin"/>
+                <entry key="/instantRedeem/groupAdmin.do" value-ref="secure_GroupAdmin"/>
+                <entry key="/instantRedeem/deleteGroup.do" value-ref="secure_GroupAdmin"/>
+                <entry key="/instantRedeem/listGroupForPackage.do" value-ref="secure_GroupAdmin" />
+                <entry key="/instantRedeem/assignGroupToPackage.do" value-ref="secure_GroupAdmin" />
+                <entry key="/instantRedeem/listPackage.do" value-ref="secure_redemptionProducts"/>
+                <entry key="/instantRedeem/generateQrCode.do" value-ref="secure_redemptionProducts"/>
+                
+                <entry key="/membership.do" value-ref="secure_membership"></entry>
+                
+            </map>
+        </property>
+    </bean>
+
+    <bean name="loginInterceptor" class="com.asiamiles.partnerportal.web.interceptor.LoginInterceptor">
+        <property name="siteProperties" ref="SiteProperties" />
+        <property name="urlHelper" ref="URLHelper"/>
+    </bean>
+
+    <bean name="log4jMDCInterceptor" class="com.asiamiles.partnerportal.web.interceptor.Log4jMDCInterceptor" />
+
+    <bean name="waInterceptor" class="com.asiamiles.partnerportal.web.interceptor.WAInterceptor" />
+
+    <bean name="sslInterceptor" class="com.asiamiles.partnerportal.web.interceptor.SSLInterceptor">
+        <property name="siteProperties" ref="SiteProperties" />
+        <property name="urlHelper" ref="URLHelper"/>
+    </bean>
+
+    <bean name="ipAddressFilterInterceptor" class="com.asiamiles.partnerportal.web.interceptor.IPAddressFilterInterceptor">
+        <property name="ipAddressProperties" ref="PermittedIPAddresses"/>
+    </bean>
+
+    <bean name="secure_homepage" class="com.asiamiles.partnerportal.web.controller.HomepageController">
+        <property name="siteProperties" ref="SiteProperties"/>
+        <property name="urlHelper" ref="URLHelper"/>
+    </bean>
+
+    <bean name="secure_redemption" class="com.asiamiles.partnerportal.web.controller.NewRedemptionController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade" />
+        <property name="validator" ref="paperlessRedemptionFormValidator" />
+        <property name="siteProperties" ref="SiteProperties" />
+    </bean>
+    
+    <!--CPPSEZ ADD FOR AMPARTNERPORT 20151225 START  -->
+	<bean name="secure_membership" class="com.asiamiles.partnerportal.web.controller.VerifyAMMembershipController">
+   		<property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade"/>
+        <property name="validator" ref="membershipValidator"/>
+        <property name="formView" value="amMembership/verifyAMMembership"/>
+    </bean>
+    <!--CPPSEZ ADD FOR AMPARTNERPORT 20151225 END  -->
+    
+    <bean name="secure_pendingClaims" class="com.asiamiles.partnerportal.web.controller.PendingClaimsController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade" />
+        <property name="validator" ref="pendingClaimsFormValidator" />
+    </bean>
+
+    <bean name="secure_billing" class="com.asiamiles.partnerportal.web.controller.BillingController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade" />
+        <property name="validator" ref="billingFormValidator"/>
+    </bean>
+
+    <bean name="secure_report" class="com.asiamiles.partnerportal.web.controller.ReportController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade"/>
+        <property name="validator" ref="reportFormValidator"/>      
+    </bean>
+
+    <bean name="secure_changePassword" class="com.asiamiles.partnerportal.web.controller.ChangePasswordController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade"/>
+        <property name="validator" ref="changePasswordRequestValidator"/>
+        <property name="formView" value="agentAdmin/ChangePasswordForm"/>
+    </bean>
+
+    <!-- Agent Admin -->
+    <bean name="secure_agentAdmin" class="com.asiamiles.partnerportal.web.controller.AgentAdminController">
+        <property name="clsFacade" ref="CLSFacade" />
+        <property name="methodNameResolver" ref="agentAdminMethodResolver"/>
+    </bean>
+    
+    <bean id="agentAdminMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+        <property name="mappings">
+            <value>
+                /agentAdmin.do=listAgents
+                /agentResetPassword.do=resetPassword
+            </value>
+        </property>
+    </bean>
+    
+    <bean name="secure_newAgent" class="com.asiamiles.partnerportal.web.controller.NewAgentController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade"/>
+        <property name="validator" ref="agentValidator"/>
+        <property name="formView" value="agentAdmin/NewAgentForm"/>
+    </bean>
+
+    <bean name="secure_updateAgent" class="com.asiamiles.partnerportal.web.controller.UpdateAgentController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade"/>
+        <property name="instantRedeemGroupDao" ref="instantRedeemDao"/>
+        <property name="validator" ref="agentValidator"/>
+        <property name="formView" value="agentAdmin/UpdateAgentForm"/>
+    </bean>
+    
+    <bean name="secure_voidClaim" class="com.asiamiles.partnerportal.web.controller.VoidClaimController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade"/>
+        <property name="validator" ref="voidClaimValidator"/>
+        <property name="urlHelper" ref="URLHelper"/>
+        <property name="formView" value="report/VoidClaim"/>
+    </bean> 
+    
+    <!-- WebCLS Agent Admin -->     
+    <bean name="secure_clsAgentAdmin" class="com.asiamiles.partnerportal.web.controller.CLSAdminController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="clsFacade" ref="CLSFacade"/>
+        <property name="validator" ref="agentValidator"/>
+        <property name="formView" value="clsAdmin/NewAdminAgentForm"/>
+    </bean>
+    
+    <bean name="clsAdminInterceptor" class="com.asiamiles.partnerportal.web.interceptor.CLSAdminInterceptor" >
+        <property name="cryptoHelper" ref="CryptoHelper"/>
+    </bean>
+
+	<!--  Instant Redeem QR Code -->
+    <bean name="secure_qrCodeReader" class="com.asiamiles.partnerportal.web.controller.QRCodeReaderController">
+        <property name="methodNameResolver" ref="qrCodeReaderMethodResolver"/>
+        <property name="urlHelper" ref="URLHelper"/>
+        <property name="siteProperties" ref="SiteProperties" />
+    </bean>
+    
+    <bean name="secure_GroupAdmin" class="com.asiamiles.partnerportal.web.controller.InstantRedeemGroupController">
+    	<property name="instantRedeemGroupDao" ref="instantRedeemDao"/>
+    	<property name="clsFacade" ref="CLSFacade"/>
+    	<property name="methodNameResolver" ref="groupAdminMethodResolver"/>
+    </bean>
+    
+    <bean id="groupAdminMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+    	<property name="mappings">
+    		<value>
+    			/instantRedeem/groupAdd.do=groupAdd
+    			/instantRedeem/listGroup.do=listGroupAssign
+    			/instantRedeem/groupAssign.do=groupAssign
+    			/instantRedeem/loadGroupAdd.do=loadGroupAdd
+    			/instantRedeem/listPackageGroup.do=listGroupPackage
+    			/instantRedeem/groupAdmin.do=groupAdmin
+    			/instantRedeem/deleteGroup.do=deleteGroup
+    			/instantRedeem/listGroupForPackage.do=listGroupForPackage
+    			/instantRedeem/assignGroupToPackage.do=assignGroupToPackage
+    		</value>
+    	</property>
+    </bean>
+
+    <bean id="qrCodeReaderMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+        <property name="mappings">
+            <value>
+                /instantRedeem/qrCodeReader.do=displayQRCodeReader
+            </value>
+        </property>
+    </bean>
+    
+    <bean name="secure_instantRedeem" class="com.asiamiles.partnerportal.web.controller.InstantRedeemController">
+        <property name="messageCodesResolver" ref="messageCodesResolver"/>
+        <property name="urlHelper" ref="URLHelper"/>
+        <property name="clsFacade" ref="CLSFacade" />
+        <property name="validator" ref="paperlessRedemptionFormValidator" />
+        <property name="siteProperties" ref="SiteProperties" />
+        <property name="instantRedeemGroup" ref="instantRedeemGroup" />
+        <property name="personalOfferRequest" ref="personalofferRequest"/>
+        <property name="offerProxy" ref="personalofferProxy"/>
+    </bean>
+    
+    <bean name="secure_redemptionProducts" class="com.asiamiles.partnerportal.web.controller.RedemptionProductsController">
+        <property name="methodNameResolver" ref="redemptionProductsMethodResolver"/>
+        <property name="siteProperties" ref="SiteProperties"/>
+        <property name="instantRedeemGroupDao" ref="instantRedeemDao"/>
+        <property name="personalOfferRequest" ref="personalofferRequest"/>
+        <property name="offerProxy" ref="personalofferProxy"/>
+    </bean>
+    
+    <bean id="redemptionProductsMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+        <property name="mappings">
+            <value>
+                /instantRedeem/listPackage.do=listPackage
+                /instantRedeem/generateQrCode.do=generateQrCode
+            </value>
+        </property>
+    </bean>
+    
+    <bean name="secure_invalidOffer" class="com.asiamiles.partnerportal.web.controller.InvalidOfferController">
+        <property name="siteProperties" ref="SiteProperties"/>
+        <property name="methodNameResolver" ref="invalidOfferMethodResolver"/>
+    </bean>
+
+    <bean id="invalidOfferMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+        <property name="mappings">
+            <value>
+                /instantRedeem/invalidOffer.do=invalidOffer
+                /instantRedeem/expiredOffer.do=expiredOffer
+                /instantRedeem/redeemedOffer.do=redeemedOffer
+                /instantRedeem/notAllowOffer.do=notAllowOffer
+            </value>
+        </property>
+    </bean>    
+</beans>

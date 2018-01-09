@@ -1,0 +1,80 @@
+Setting up Local WAS for development:
+
+1. Set up RAD + WAS with appropriate updates:
+   - RAD 6.0.1.2  (Just use Rational Product Updater to get the latest Fixes)
+   - WAS 6.0.2.17 (Current Production Version 20090615)
+
+2. Add new WAS instance to RAD - just follow the default instructions
+   - If the WAS instance isn't *clean* (i.e. it contains previously-deployed projects) then you might need to create a new WAS Profile
+
+3. Add Oracle driver to AppServer classpath
+   - Download ojdbc14.jar from somewhere (e.g. webvap41)
+   - WAS Admin Console: Servers -> Application Servers -> [server1] -> Java and Process Management / Process Definitions -> Java Virtual Machine
+     Add JAR's path to classpath
+   - Save configuration
+
+4. Add System Properties to AppServer JVM (mocking the _WASPlatform system property populated by the cx-delivery custom service)
+   - WAS Admin Console: Servers -> Application Servers -> [server1] -> Java and Process Management / Process Definitions -> Java Virtual Machine -> Custom Properties -> New
+     Property Name: _WASPlatform
+     Property Value: LOCAL
+   - Save configuration
+
+5. Set up STR datasource
+   - WAS Admin Console: Resources -> JDBC Providers -> Oracle JDBC Driver -> Data Sources -> New
+   - Name: EBSAppDataSource
+     JNDI Name: jdbc/EBSAppDataSource
+	 URL: jdbc:oracle:thin:@webdbdev:1521:ebst
+   - Save configuration
+
+6. Set up Logger Dependencies
+   - (*NIX) Add Logger XML files to /repos/prop/logger/[APP_NAME].xml on local disk
+   - (WINDOWS) Add Logger XML files to /[Source Folder]/[APP_NAME].xml in project file structure
+   - Create the directories as specified in the Logger XML files.
+
+7. Set up properties files
+   - (*NIX) Create Directory: /repos/prop/ampartnerportal/
+   - (WINDOWS) Create Directory: C:\repos\prop\ampartnerportal\
+   - Copy ampartnerportal.properties and clsinterface.properties into the above directory
+
+8. Copy the following Library files from AIX Server (Put them in C: using the same path i.e. C:\repos\...)
+   - /repos/javaclass/common/lib/cx-utility.jar
+   - /repos/javaclass/common/lib/logger.jar
+   - /repos/javaclass/common/lib/str-wrapper.jar
+   - /repos/javaclass/common/lib/ext/commons-codec-1.3.jar
+   - /repos/javaclass/common/lib/ext/commons-collections-3.1.jar
+   - /repos/javaclass/common/lib/ext/commons-httpclient-3.1.jar
+   - /repos/javaclass/common/lib/ext/commons-lang-2.4.jar
+   - /repos/javaclass/common/lib/ext/commons-validator-1.1.3.jar ***
+   - /repos/javaclass/common/lib/ext/jakarta-oro-2.0.8.jar
+   - /repos/javaclass/common/lib/ext/log4j-1.2.15.jar
+   - /repos/javaclass/common/lib/spring-framework-2.5.6/spring.jar
+   - /repos/javaclass/common/lib/spring-framework-2.5.6/spring-webmvc.jar
+   - /repos/javaclass/common/lib/xstream-1.3.1/xstream-1.3.1.jar
+   - /repos/javaclass/common/lib/xstream-1.3.1/xpp3_min-1.1.4c.jar
+
+9. Set up Shared Library: AM_PARTNERPORTAL_SHARED_LIB
+   - WAS Admin Console: Environment -> Shared Libraries -> New
+     Name: AM_PARTNERPORTAL_SHARED_LIB
+     Description: AM_PARTNERPORTAL_SHARED_LIB
+     Classpath:
+     /repos/javaclass/common/lib/cx-utility.jar
+     /repos/javaclass/common/lib/logger.jar
+     /repos/javaclass/common/lib/str-wrapper.jar
+     /repos/javaclass/common/lib/ext/commons-codec-1.3.jar
+     /repos/javaclass/common/lib/ext/commons-collections-3.1.jar
+     /repos/javaclass/common/lib/ext/commons-httpclient-3.1.jar
+     /repos/javaclass/common/lib/ext/commons-lang-2.4.jar
+     /repos/javaclass/common/lib/ext/commons-validator-1.1.3.jar ***
+     /repos/javaclass/common/lib/ext/jakarta-oro-2.0.8.jar
+     /repos/javaclass/common/lib/ext/log4j-1.2.15.jar
+     /repos/javaclass/common/lib/spring-framework-2.5.6/spring.jar
+     /repos/javaclass/common/lib/spring-framework-2.5.6/spring-webmvc.jar
+     /repos/javaclass/common/lib/xstream-1.3.1/xstream-1.3.1.jar
+     /repos/javaclass/common/lib/xstream-1.3.1/xpp3_min-1.1.4c.jar
+     /[workspace directory]/ampartnerportal/WebContent/WEB-INF/classes/   (required for STR in LOCAL Environment)
+   - Save configuration
+
+10. Add AM_PARTNERPORTAL_SHARED_LIB Shared Library to ampartnerportal Webapp
+    - WAS Admin Console: Applications -> Enterprise Applications -> ampartnerportalEAR -> Libraries -> Add
+    - Select AM_PARTNERPORTAL_SHARED_LIB from the drop down list and Apply
+    - Save configuration

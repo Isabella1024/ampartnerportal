@@ -1,0 +1,313 @@
+body {
+    padding-bottom:70px;
+}
+.topbar-aml-merchant,
+.topbar-aml-merchant-inside
+{
+	background: #f9ce33;
+}
+.topbar-aml-merchant .logo-aml,
+.topbar-aml-merchant-inside .logo-aml
+{
+    font-size:0.95em; 
+    color:#000; 
+    padding-top:4px;
+    line-height:1em;
+}
+.topbar-aml-merchant .logo-aml
+{
+    text-align:center; 
+}
+.topbar-aml-merchant  .logo-aml .logo-img{
+    display:inline-block;
+    margin:0; 
+    width:auto;
+}
+.topbar-aml-merchant-inside  .logo-aml .logo-img{
+    float:left;
+    margin-left: 5px;
+    width:50px;
+}
+.topbar-aml-merchant  .logo-aml span{
+    display:inline-block; 
+    vertical-align:top; 
+    padding-left:10px; 
+    padding-top:11px; 
+    line-height:1em;
+}
+.topbar-aml-merchant-inside .logo-aml span.merchantname{
+		color: #000000;
+		float: right;
+		font-weight: bold;
+		letter-spacing: 1px;
+        font-size: 1.2em;
+		text-transform: uppercase;
+        display:block;
+        padding-top: 0px;
+        line-height: 40px;
+        overflow: hidden;
+        width:80%; 
+        height: 40px;
+        text-align: right;
+        
+	}
+
+.forgot_links a.forgot_link_pin {
+    float:left;
+}
+div.footer{	
+	height: 54px;
+}
+.choose_lang
+{
+	background: #000;
+}
+/****  status images area start ********/
+.statusdiv{
+		font-size: 1.15em;
+		padding-bottom: 10px;
+		padding-top: 20px;
+        border-bottom:none;
+	}
+.statusdiv p {
+    display: block;
+    clear: both;
+    line-height: 1.2; 
+    font-size: 0.9em;
+    padding-top: 8px;
+    
+}
+.statusdiv span {
+    float:left; 
+    clear:none;
+    font-weight: bold;
+    display: inline-block
+}
+.statusdiv span.status_msg{
+		color: #241f20;		
+	}
+.statusdiv span.offerErrorMsg{
+	color: #e83f33;	
+}
+.statusdiv span.statuscompleted
+{  
+		color: #64aa49;	
+        padding-left: 10px;
+	}
+.statusdiv span.statusopen
+	{
+		color: #f7be33;	
+        padding-left: 10px;
+	}
+.offerstatusimage
+{
+	margin-bottom: 0px;
+	width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-bottom:none;
+}
+.offerErrorImg
+	{
+        margin-top: 0;
+		padding-bottom: 20px;
+		width: 55%;
+		margin: 0 auto;
+        border-bottom:none;
+	}
+.offerstatusimage img,
+.offerErrorImg img{
+    width:100%; 
+    height: auto;
+}
+/****  status images area end ********/
+
+.merchant_det
+{
+	color: #241f20;
+	font-size: 1em;
+}
+.merchant_det,.item_select
+{
+	display: block;
+	padding-bottom: 10px;
+	width: 45%;
+}
+.item_select span,.merchant_det span,.item_confirm span
+{
+	clear: both;
+	color: #929497;
+	display: block;
+	font-size: .9em;
+}
+
+.ba_current em,
+.ba_after em,
+.miles_need em{
+
+    padding-left: 0px;
+    background: none;
+}
+.floatredeemdata
+{
+	width: 100%;
+}
+
+.force_word_break {
+	 -ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+	    -ms-hyphens: auto;
+	        hyphens: auto;
+}
+
+/*********** form element ********/
+#fillDetails{
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+#fillDetails .input_field{
+    padding-left:0; 
+}
+#fillDetails .input_field label{
+    display:block; 
+    height:25px;
+    margin:0; 
+    padding:10px 10px 0px 15px; 
+    width:100%}
+#fillDetails input[type=text], 
+#fillDetails input[type=password],
+#fillDetails input[type=email],
+#fillDetails input[type=tel]{
+        padding-top: 5px;
+}
+#fillDetails textarea{
+    resize: none;
+    padding: 5px 15px;
+    width: 100%;
+}
+.offer_box .btn_submit{
+    width: 48%; 
+    margin: 0 1%;
+    float:left;   
+}
+.offer_box_complete .detail_log{
+        border-bottom: 0;
+    }
+    
+/** Larger Screens - desktops and tablets **/
+@media only screen and (min-width: 569px) {
+  /* Style adjustments for viewports that meet the condition */
+    body{
+    padding-bottom: 80px;
+    }
+    .topbar-aml-merchant .logo-aml,
+    .topbar-aml-merchant-inside .logo-aml
+    {
+    padding-top:0px;
+    }
+    .topbar-aml-merchant-inside .logo-aml span.merchantname{
+		/*padding-top: 20px;*/
+        line-height: 60px;
+        height: 50px;
+    }
+    .topbar-aml-merchant  .logo-aml span{
+    padding-top:22px; 
+    }
+    #fillDetails{
+        margin-top: -15px;
+        border-top:1px solid #CCC;
+    }
+    #fillDetails .input_field {
+        height: auto;
+        min-height:75px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    #fillDetails .input_field label{  
+        height:30px;
+        padding-left:20px;
+    }
+    #fillDetails input[type=text], 
+    #fillDetails input[type=password],
+    #fillDetails input[type=email],
+    #fillDetails input[type=tel]{
+
+        margin-bottom: 0;
+    }
+    #fillDetails  textarea{
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    
+    .offer_box .form_btn {
+    
+        width: 100%;
+    }
+    .offerstatusimage
+    {
+        margin-bottom: 0px;
+        width: 500px;
+        margin: 0 auto;
+        padding-top: 20px;
+        border-bottom:none;
+    }
+    .offerErrorImg
+	{
+        margin-top: 0;
+		padding-bottom: 40px;
+		width: 300px;
+    }   
+    
+}
+/** Larger Screens - tablets **/
+@media only screen and (min-width: 569px) and (max-width:989px) {
+    
+    .topbar-aml-merchant-inside  .logo-aml .logo-img{
+    
+    margin-left: 25px;
+}
+
+	.topbar-aml-merchant-inside .logo-aml span.merchantname{
+		padding-right:20px;
+		width: 85%
+	}
+	
+	div.footer {
+        	bottom:10px;
+    }
+	
+   
+}        
+/** Larger Screens - desktops and tablets **/
+@media all and (min-width: 990px) {
+    .main_content{
+    padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .form_btn {
+    
+        width: 400px;
+    }
+    .offer_box .form_btn {
+    
+        width: 600px;
+    }
+    #fillDetails{
+        padding-top: 30px;
+        margin-top: 0px;
+        border-top:0;
+    }
+    
+    div.footer {
+      bottom:6px 
+    }
+    
+   
+}
